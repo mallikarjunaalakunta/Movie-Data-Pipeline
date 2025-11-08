@@ -31,8 +31,8 @@ This project implements an end-to-end ETL (Extract, Transform, Load) pipeline th
 ### Step 1: Clone the Repository
 
 ```bash
-git clone [https://github.com/mallikarjunaalakunta/Movie-Data-Pipeline](https://github.com/mallikarjunaalakunta/Movie-Data-Pipeline)
-cd <Movie-Data-Pipeline>
+git clone https://github.com/mallikarjunaalakunta/Movie-Data-Pipeline
+cd Movie-Data-Pipeline
 ```
 
 ### Step 2: Install Python Dependencies
@@ -311,3 +311,4 @@ The project includes pre-built queries in `queries.sql`:
 └── fuzzy_matches.json      # Fuzzy match log (generated)
 
 ```
+
