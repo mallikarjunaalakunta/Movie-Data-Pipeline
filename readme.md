@@ -128,7 +128,25 @@ TRUNCATE TABLE rating, movie_genre, movie, user_t, genre RESTART IDENTITY CASCAD
 
 3. Re-run `python ETL.py`
 
+
 ---
+
+## 📁 Project Structure
+
+```
+.
+├── ETL.py                  # Main ETL pipeline script
+├── schema.sql              # PostgreSQL database schema
+├── queries.sql             # Analytics queries
+├── requirements.txt        # Python dependencies
+├── .env                    # Environment variables (not in repo)
+├── movies.csv              # MovieLens data (not in repo)
+├── ratings.csv             # MovieLens data (not in repo)
+├── progress.json           # ETL checkpoint (generated)
+├── omdb_cache.sqlite       # API response cache (generated)
+└── fuzzy_matches.json      # Fuzzy match log (generated)
+
+```
 
 ## 🏗️ Design Decisions & Architecture
 
@@ -293,22 +311,5 @@ The project includes pre-built queries in `queries.sql`:
 3. **Most Prolific Director** - Director with the most movies
 4. **Year-wise Trends** - Average ratings by release year
 
----
 
-## 📁 Project Structure
-
-```
-.
-├── ETL.py                  # Main ETL pipeline script
-├── schema.sql              # PostgreSQL database schema
-├── queries.sql             # Analytics queries
-├── requirements.txt        # Python dependencies
-├── .env                    # Environment variables (not in repo)
-├── movies.csv              # MovieLens data (not in repo)
-├── ratings.csv             # MovieLens data (not in repo)
-├── progress.json           # ETL checkpoint (generated)
-├── omdb_cache.sqlite       # API response cache (generated)
-└── fuzzy_matches.json      # Fuzzy match log (generated)
-
-```
 
